@@ -36,7 +36,7 @@ if we put y = x here we get,
 fib (x) * (fib (y - 1) + fib (x + 1)) = fib (2x), therefore fib (x) | fib (2x) now again we can get fib (2x) | fib (3x) and rest is Mathematical Induction.
 We know that if a divides b then fib (a) divides fib (b), gcd (fib (a), fib (a + 1)) = 1, 
 ```
-refer [liink](https://math.stackexchange.com/questions/24378/prove-that-any-two-consecutive-terms-of-the-fibonacci-sequence-are-relatively-pr)
+refer [link](https://math.stackexchange.com/questions/24378/prove-that-any-two-consecutive-terms-of-the-fibonacci-sequence-are-relatively-pr)
 ```	
 In eq (1) 
 gcd (fib (x), fib(x + 1)) = 1
