@@ -15,17 +15,16 @@ Brute for counting numeber of divisors
 	So we can answer each query linear time (that is operation performed is realted linearly to x), worst case we have x = 10^5  for each query and maximum number of queries are 10^4 which makes overall operations 10^9.
 	10^9 is too much for 2 sec time limit.
 Pre calcultion
-	Idea is to calculate and store no. of divisors of every x &le; 10^5, and then answering any query would be instant.
+	Idea is to calculate and store no. of divisors of every x < 10^5, and then answering any query would be instant.
 	We can do precomputation as shown
-		for (int i = st; i &lt; en; i++) { 		  	// First loop
-			for (int j = i * 2; j &lt; en; j += i) {   // Second loop
+		for (int i = st; i < en; i++) { 		  	// First loop
+			for (int j = i * 2; j < en; j += i) {   // Second loop
 				div[j]++; 							// An array which stores then number of divisors
 			}
 		}
 	Loop 2 runs (en - i) / j times for each i, i goes from 2 to 10^5 in our case, therfore
-	total operation = \sum_{1}^{10^5-1} ^{10^5 - i}/_i  \equiv (10^5 - 1) / 1 + (10^5 - 2) / 2 + (10^5 - 3) / 3 .... (10^5 - 10^3) / 10^3 .. 3 / (10^5 - 3) + 2 / (10^5 - 2) + 1 / (10^5 - 1) + 0, in this summation staring terms decrease at fine rate and complexity
+	total operation =  (10^5 - 1) / 1 + (10^5 - 2) / 2 + (10^5 - 3) / 3 .... (10^5 - 10^3) / 10^3 .. 3 / (10^5 - 3) + 2 / (10^5 - 2) + 1 / (10^5 - 1) + 0, in this summation staring terms decrease at fine rate and complexity
 	turns out to be O (n * log (n)).
-	For more insight on how O(n * log (n)). 
 ```
 Refer [Link](https://en.wikipedia.org/wiki/Harmonic_number)
 
