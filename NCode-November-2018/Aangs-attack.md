@@ -25,8 +25,9 @@ Pre calcultion
 	Loop 2 runs (en - i) / j times for each i, i goes from 2 to 10^5 in our case, therfore
 	total operation = (10^5 - 1) / 1 + (10^5 - 2) / 2 + (10^5 - 3) / 3 .... (10^5 - 10^3) / 10^3 .. 3 / (10^5 - 3) + 2 / (10^5 - 2) + 1 / (10^5 - 1) + 0, in this summation staring terms decrease at fine rate and complexity
 	turns out to be O (n * log (n)).
-	For for insight on how O(n * log (n)) refer https://en.wikipedia.org/wiki/Harmonic_number .
+	For more insight on how O(n * log (n)). 
 ```
+Refer [Link](https://en.wikipedia.org/wiki/Harmonic_number)
 
 ##### Proof 
 ```
