@@ -9,12 +9,13 @@ Explanation:
 	Using given operation it is possible to change every element to a single element of array.
 	Now we need to find elements in arrays which have minimum diffirence, as we know it has to be some element of array.
 	To find the min difference we can do the following :
-		Let us say two arrays are A and B. Also we have variable mi = 10 ^ 18.
+		Let us say two arrays are A and B. Also we have variable mi = 10<sup>18</sup>.
 		1. We sort array B
 		2. For every element of A we do a binary search on B to find two closest element to it, then we update mi incase this diff is smaller than mi. 
 
 Proof: 
-	Here we proof that whole array can be changed to any element of array.
+
+	Here we proove that whole array can be changed to any element of array.
 	Suppose we have an array A and we wanted to change all its elements to A[x].
 		1. We can always make a[0] equal to a[1] as it is the only neighbour, can easily be shown :
 			if a[1] > a[0] then a[0] in min and a[1] is max hence we can change a[0] to a[1]
@@ -23,6 +24,7 @@ Proof:
 		2. Same goes with a[n - 1] and a[n - 2], a[n - 1] can always be made equal to a[n - 2]
 		3. When we make a[0] = a[1], then we can make a[1] = a[2] as a[0] is equal to a[1] it doesn't contribute to the comparision, and after we havev changed a[1] we can again change a[0] to a[1].
 		4. Now if we keep doing it we can make a[0] = a[1] = a[2] ... = a[x - 1] = a[x] and similarly a[n - 1] = a[n - 2] = a[n - 3] ... = a[x + 1] = a[x], hence making all elements equal to a[x].
+
 
 
 ##### Solution (C++)
