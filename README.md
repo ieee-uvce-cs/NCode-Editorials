@@ -4,5 +4,5 @@ This repository contains the editorials of the NCode Competitions that have take
 >"The best thing about a boolean is, even if you're wrong, you are only off by a bit."
 
 
-- [November 2018](./NCode-November-2018).
-- [January 2019](./NCode-January-2019).
+- [November 2018](./November-2018).
+- [January 2019](./January-2019).
